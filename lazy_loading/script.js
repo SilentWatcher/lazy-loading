@@ -5,11 +5,11 @@ const imgJson = [
     { "name": "Dr. Williams", "image": "./assets/doctor3.png", "specialty": "Orthopedic Surgeon" },
     { "name": "Dr. Brown", "image": "./assets/doctor4.png", "specialty": "Neurologist" },
     { "name": "Dr. Miller", "image": "./assets/doctor5.png", "specialty": "Gynecologist" },
-    { "name": "Dr. Davis", "image": "./assets/doctor6.jpg", "specialty": "Pediatrician" },
-    { "name": "Dr. Garcia", "image": "./assets/doctor7.jpg", "specialty": "Ophthalmologist" },
-    { "name": "Dr. Rodriguez", "image": "./assets/doctor8.jpg", "specialty": "Psychiatrist" },
-    { "name": "Dr. Martinez", "image": "./assets/doctor9.jpg", "specialty": "Endocrinologist" },
-    { "name": "Dr. Jackson", "image": "./assets/doctor10.jpg", "specialty": "Urologist" },
+    { "name": "Dr. Davis", "image": "./assets/doctor6.png", "specialty": "Pediatrician" },
+    { "name": "Dr. Garcia", "image": "./assets/doctor7.png", "specialty": "Ophthalmologist" },
+    { "name": "Dr. Rodriguez", "image": "./assets/doctor8.png", "specialty": "Psychiatrist" },
+    { "name": "Dr. Martinez", "image": "./assets/doctor9.png", "specialty": "Endocrinologist" },
+    { "name": "Dr. Jackson", "image": "./assets/doctor10.png", "specialty": "Urologist" },
     // 10 -> 
     { "name": "Dr. Smith", "image": "./assets/doctor11.png", "specialty": "Cardiologist" },
     { "name": "Dr. Johnson", "image": "./assets/doctor12.png", "specialty": "Dermatologist" },
@@ -38,7 +38,7 @@ function loadImages() {
         const doctor_card = document.createElement('div')
 
         doctor_card.innerHTML=`            
-            <img src=${item.image} alt="doctor" loading="lazy" height="200px" width="200px">
+            <img src=${item.image} alt="doctor" loading="lazy" height="180px" width="200px">
             <h3>${item.name}</h3>
             <p>${item.specialty}</p>`
     
